@@ -1,0 +1,97 @@
+/* General body styles for Login Page */
+.bodypal {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa; /* Light cyan background color for the entire page */
+}
+
+/* Container for the login page */
+.LoginPage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height for centering */
+  /* background: rgba(0, 0, 0, 0.1); */
+}
+
+/* Login page login container */
+.LoginPage-login-container {
+  background: linear-gradient(to bottom right, #b3e5fc, #e0f7fa);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Adjusted max-width for better layout */
+  text-align: center;
+}
+
+/* Header styles */
+.LoginPage-login-container h1 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+/* Form group styles for inputs */
+.LoginPage-form-group {
+  margin-bottom: 20px; /* Increased margin for better spacing */
+  text-align: left;
+}
+
+.LoginPage-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.LoginPage-form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  transition: border-color 0.3s ease; /* Smooth transition for focus state */
+}
+
+.LoginPage-form-group input:focus {
+  border-color: #007bff; /* Blue color on focus */
+  outline: none;
+}
+
+/* Submit button styles */
+.LoginPage-submit-button {
+  background: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.LoginPage-submit-button:hover {
+  background: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Links styles (forgot password, signup link, etc.) */
+.LoginPage-links {
+  margin-top: 20px;
+}
+
+.LoginPage-links p {
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+.LoginPage-links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.LoginPage-links a:hover {
+  text-decoration: underline;
+}

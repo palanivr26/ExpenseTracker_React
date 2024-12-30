@@ -1,0 +1,132 @@
+/* Basic Styles for the Contact Page */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light gray background color for the entire page */
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100vh;            /* Full viewport height */
+    flex-direction: column;   /* Ensure content stays in one column */
+}
+
+/* Contact Page Styling */
+.Contact-contact-page {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Maximum width for better readability */
+    padding: 40px; /* Padding to ensure there's space around the form */
+    background-color: #3e867e; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center;
+    margin-top: 20px; /* Space from the top of the screen */
+}
+
+/* Header Styling */
+.Contact-contact-page h1 {
+    color: #333;
+    font-size: 2rem; /* Larger title */
+    margin-bottom: 30px;
+}
+
+/* Contact Form Layout */
+.Contact-contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form content */
+    width: 100%;
+}
+
+/* Form Group Styles */
+.Contact-form-group {
+    margin-bottom: 20px; /* Spacing between form elements */
+    width: 100%; /* Ensure full width */
+}
+
+.Contact-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555; /* Darker text for better visibility */
+}
+
+.Contact-form-group input,
+.Contact-form-group textarea {
+    width: 100%; /* Full width input */
+    padding: 12px; /* Comfortable padding */
+    border: 1px solid #ddd; /* Light border color */
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333; /* Text color */
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+.Contact-form-group input:focus,
+.Contact-form-group textarea:focus {
+    border-color: #f4f5f7; /* Blue color on focus */
+    outline: none;
+}
+
+/* Response Message (Success or Error) */
+.Contact-response-message {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 15px;
+}
+
+.Contact-response-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.Contact-response-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Submit Button Styles */
+.Contact-submit-btn {
+    padding: 12px 24px;
+    background-color: #141414; /* Matching the blue theme */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 60%; /* Adjust the button width for a nice look */
+    margin-top: 20px;
+    align-self: center; /* Center the button */
+}
+
+.Contact-submit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.Contact-submit-btn:disabled {
+    background-color: #ccc; /* Disabled state */
+    cursor: not-allowed;
+}
+
+/* Additional Styles */
+.Contact-contact-page {
+    padding: 30px 40px;
+}
+
+@media (max-width: 600px) {
+    .Contact-contact-page {
+        padding: 20px;
+        width: 100%; /* Ensure it takes full width on smaller screens */
+    }
+
+    .Contact-submit-btn {
+        width: 80%; /* Make the button width wider on mobile */
+    }
+}

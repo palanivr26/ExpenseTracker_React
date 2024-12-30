@@ -1,0 +1,192 @@
+/* Expense Calculator Container */
+.ExpenseCalculator-container {
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto; /* Center container with auto margin */
+  background: linear-gradient(to bottom right, #b3e5fc, #e0f7fa); /* Gradient background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 900px;
+}
+
+.ExpenseCalculator-income,
+.ExpenseCalculator-add-edit-expense,
+.ExpenseCalculator-expenses,
+.ExpenseCalculator-summary,
+.ExpenseCalculator-chart {
+  margin-bottom: 20px;
+}
+
+/* Align form sections properly using flexbox */
+.ExpenseCalculator-income,
+.ExpenseCalculator-add-edit-expense {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ExpenseCalculator-income h2,
+.ExpenseCalculator-add-edit-expense h2,
+.ExpenseCalculator-expenses h2,
+.ExpenseCalculator-summary h2 {
+  color: #00796b; /* Green color */
+  margin-bottom: 20px;
+}
+
+input,
+button,
+select {
+  width: 100%; /* Full width to match input fields */
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in total width and height */
+}
+
+input:focus,
+button:focus,
+select:focus {
+  outline: none;
+  border-color: #0073e6; /* Blue border on focus */
+  box-shadow: 0 0 4px rgba(0, 115, 230, 0.5); /* Subtle shadow on focus */
+}
+
+button {
+  background-color: #00796b; /* Green background */
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #005bb5; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fafafa; /* Light background color for list items */
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for list items */
+}
+
+li span {
+  flex: 1;
+  text-align: left;
+}
+
+.ExpenseCalculator-edit-button,
+.ExpenseCalculator-remove-button,
+.ExpenseCalculator-clear-button {
+  width: auto;
+  padding: 6px 12px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.ExpenseCalculator-edit-button {
+  background-color: #00796b; /* Green button for editing */
+  color: white;
+}
+
+.ExpenseCalculator-remove-button,
+.ExpenseCalculator-clear-button {
+  background-color: #ff4d4d; /* Red button for remove/clear */
+  color: white;
+}
+
+.ExpenseCalculator-edit-button:hover,
+.ExpenseCalculator-remove-button:hover,
+.ExpenseCalculator-clear-button:hover {
+  background-color: #005bb5; /* Darker shade on hover */
+  transform: scale(1.05);
+}
+
+.ExpenseCalculator-summary {
+  margin-top: 20px;
+}
+
+.ExpenseCalculator-summary p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.ExpenseCalculator-chart {
+  margin-top: 30px;
+}
+
+/* Dropdown select field (aligned with inputs) */
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+select:focus {
+  border-color: #0073e6;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Label styles for consistency */
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  width: 100%; /* Ensure labels take full width */
+}
+
+/* Flexbox container for better form field alignment */
+.ExpenseCalculator-add-edit-expense {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all form fields */
+}
+
+.ExpenseCalculator-add-edit-expense input,
+.ExpenseCalculator-add-edit-expense select,
+.ExpenseCalculator-add-edit-expense button {
+  margin-bottom: 20px; /* Consistent margin between form fields */
+}
+
+/* To fix input misalignment */
+.ExpenseCalculator-add-edit-expense input,
+.ExpenseCalculator-add-edit-expense select {
+  width: 100%; /* Ensure all input fields, selects take full width */
+  max-width: 100%; /* Remove any unintended constraints */
+  box-sizing: border-box; /* Box-sizing ensures proper padding/border calculation */
+}
+
+li {
+  padding: 12px 20px;
+  font-size: 16px; /* Slightly larger font for list items */
+}
+
+.ExpenseCalculator-clear-button {
+  width: auto;
+  padding: 6px 12px;
+}

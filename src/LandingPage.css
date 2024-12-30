@@ -1,0 +1,112 @@
+
+/* Overall Layout */
+.LandingPage-landing-page {
+  margin-top: -327px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.LandingPage-hero {
+  background-image: url('M:\vs code\ExpenceTracker_react\src\img\money-transfer-663.gif');
+  color: #fff;
+  padding: 120px 20px; /* Sufficient top and bottom padding */
+  text-align: center;
+  display: flex;
+  margin-top: 900px;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.LandingPage-hero-content {
+  max-width: 800px; /* Ensures content doesn't stretch too wide */
+  margin: 0 auto;
+}
+
+.LandingPage-hero h1 {
+  font-size: 2.8em; /* Large font size for prominence */
+  margin: 0 0 20px; /* Space below heading */
+}
+
+.LandingPage-hero p {
+  font-size: 1.2em;
+  margin: 0 0 30px; /* Space below paragraph */
+}
+
+/* Features Section */
+.LandingPage-features {
+  background-color: #f4f4f4;
+  padding: 60px 20px; /* Consistent padding */
+}
+
+.LandingPage-features-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: center; /* Center align items horizontally */
+  gap: 20px; /* Space between items */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.LandingPage-feature {
+  flex: 1;
+  min-width: 280px; /* Responsive design */
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.LandingPage-feature:hover {
+  transform: scale(1.05); /* Slightly enlarge the feature box */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.LandingPage-feature h2 {
+  font-size: 1.6em; /* Adjusted for balance */
+  margin: 0 0 15px; /* Space below heading */
+}
+
+.LandingPage-feature p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Call to Action Section */
+.LandingPage-cta {
+  text-align: center;
+  padding: 60px 20px; /* Consistent padding */
+  background-color: #e9ecef;
+}
+
+.LandingPage-cta h2 {
+  font-size: 2.2em; /* Adjusted for emphasis */
+  margin: 0 0 20px; /* Space below heading */
+}
+
+.LandingPage-cta p {
+  font-size: 1.2em;
+  margin: 0 0 30px; /* Space below paragraph */
+}
+
+.LandingPage-cta-button {
+  display: inline-block;
+  width: 150px;
+  padding: 12px 24px; /* Button padding */
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #2f5781;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.LandingPage-cta-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slightly enlarge the button */
+}

@@ -1,0 +1,173 @@
+/* Finance Tracker Container */
+.finance-tracker-container {
+    width: 100%;
+    max-width: 800px; /* Limiting the width for a more professional look */
+    margin: 0 auto;
+    padding: 30px;
+    background: linear-gradient(to bottom right, #b3e5fc, #e0f7fa); /* Gradient background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for a clean, professional look */
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+  }
+  
+  /* Title of the Finance Tracker Form */
+  .finance-tracker h2 {
+    color: #00796b; /* Green color */
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  /* Centering the Form */
+  .finance-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Space between form fields */
+    margin-top: 800px
+  }
+  
+  /* Form Inputs and Buttons */
+  .finance-form input,
+  .finance-form select,
+  .finance-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensure padding and borders don't affect the width */
+    margin-bottom: 16px; /* Added space between inputs */
+  }
+  
+  .finance-form input:focus,
+  .finance-form select:focus,
+  .finance-form button:focus {
+    outline: none;
+    border-color: #0073e6;
+    box-shadow: 0 0 5px rgba(0, 115, 230, 0.3); /* Subtle focus effect */
+  }
+  
+  /* Button Styling */
+  .finance-form button {
+    background-color: #00796b; /* Green background */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .finance-form button:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarging button for interactivity */
+  }
+  
+  /* Finance Records Section */
+  .finance-records {
+    width: 100%;
+    max-width: 700px; /* Make records container a bit smaller for better readability */
+    margin: 30px auto; /* Centering the records */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow around the records */
+    border: 1px solid #e0e0e0;
+  }
+  
+  /* Title of the Finance Records Section */
+  .finance-records h3 {
+    color: #00796b; /* Green color for consistency */
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* List Styling */
+  .finance-records ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between list items */
+    align-items: center; /* Center the list items */
+  }
+  
+  /* Individual Record Items */
+  .finance-records li {
+    background: #fafafa; /* Light background color for list items */
+    padding: 20px;
+    width: 100%; /* Ensure each record stretches to fill container */
+    max-width: 650px; /* Limit the max-width for readability */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border-left: 5px solid #00796b; /* Accent color on the left border */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+  }
+  
+  .finance-records li:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Record Headings (Month, Income, etc.) */
+  .finance-records li h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Record Details */
+  .finance-records li p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Special "Important" Fields */
+  .finance-records li p.important {
+    font-weight: bold;
+    color: #00796b;
+  }
+  
+  /* Alignment for Values */
+  .finance-records li p span {
+    display: inline-block;
+    min-width: 120px;
+    text-align: right;
+  }
+  
+  /* Additional Spacing and Better Layout */
+  .finance-records li .record-detail {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+  }
+  
+  .finance-records li .record-detail span {
+    display: inline-block;
+    width: 48%;
+    text-align: right;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .finance-records li .record-detail .label {
+    font-weight: bold;
+    color: #00796b;
+  }
+  
+  .finance-records li .record-detail .value {
+    color: #333;
+  }
+  
